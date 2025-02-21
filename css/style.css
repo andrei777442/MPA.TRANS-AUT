@@ -1,0 +1,178 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Oswald:wght@200..700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Oswald", serif;
+  font-optical-sizing: auto;
+  font-weight:weight;
+  font-style: normal;
+  font-size: 17px;
+}
+
+
+main {
+   min-height: 100vh; 
+}
+
+
+
+header{
+
+   background:#2d4057 ;
+   position: fixed;
+   width:100% ;
+   top: 0;
+   padding: 10px 15px 5px 15px;
+}
+
+
+navbar {
+    margin-left: 30px;
+    margin-bottom: 10px;
+    display: inline-block;
+    overflow: auto;
+}
+
+
+navbar a {
+    color: white ;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+navbar a:hover{
+    color: #f3deca;
+    text-decoration: underline 1px;
+
+}
+
+
+section{
+    padding: 90px 15%;
+}
+
+
+footer {
+    min-width: height 80px; 
+    background: #2d4057 ;
+    text-align: center;
+    color:white;
+    padding-top: 35px;
+}
+
+p {
+  line-height: 150%;
+  text-indent: 30px ;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    font-family: "Dancing Script", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+h1 {
+    font-size: 270%;
+}
+
+h2 {
+    font-size: 200%;
+}
+
+.logo {
+
+    height: 50px;
+}
+ 
+#index {
+    background: url('../images/digger-1867268_1280.jpg');
+    background-size: cover;
+    min-height: 100vh;
+}
+
+
+.index-info {
+     margin-top: 20vh;
+     text-align: center;
+}
+
+.index-info h1 {
+    font-size: 400%;
+}
+
+.centered {
+    text-align: center;
+}
+
+.harta {
+    width: 100%;
+    height: 40vh;
+}
+
+.row {
+   overflow: auto;
+}
+
+[class^="col-"] {
+    float: left;
+    padding:0px 10px ;
+}
+
+.col-50 {
+    width: 100vh;
+}
+
+
+#hamburger {
+    color: white;
+    font-size: 28px;
+    position: absolute;
+    right: 22px;
+    top: 24px;
+    cursor: pointer;
+    display: none;
+}
+    
+/* media trebui sa fie la sfrsitul fisierului*/
+
+@media  (max-width:800px)   {
+
+    body {
+        font-size: 16px;
+    }
+
+    section {
+        padding: 90px 10px;
+    }
+
+    .index-info h1 {
+        font-size: 250%;
+    }
+
+    navbar a {
+        display: none ;
+    }
+
+    navbar.mobile a {
+        display: block;
+        text-align: center;
+        margin-top: 12px;
+
+    }
+
+    navbar {
+        display: block;
+    }
+
+    #hamburger {
+        display: block;
+    }
+}
